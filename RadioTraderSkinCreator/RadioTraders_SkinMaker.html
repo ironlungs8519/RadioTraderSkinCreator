@@ -392,7 +392,7 @@ async function buildFiles(){
   const folder = "RT_Skin_" + clean, slot = slotSel.value, base = folder + "/42/";
   const files = [];
   files.push({ path: base + "mod.info", data: new TextEncoder().encode(
-    `name=${displayName}\nid=${folder}\ndescription=Custom Radio Traders radio skin, made with the Radio Traders Skin Maker.\nrequire=RadioTraders\nposter=poster.png\n`) });
+    `name=${displayName}\nid=${folder}\ndescription=Custom Radio Traders radio skin, made with the Radio Traders Skin Maker.\nrequire=\\RadioTraders\nloadModAfter=\\RadioTraders\nposter=poster.png\nversionMin=42.20\n`) });
   // poster: cover-crop of the first available image
   const src = S[kinds[0]].img, pc = document.createElement("canvas"); pc.width = pc.height = 256;
   const pctx = pc.getContext("2d"), ps = Math.max(256/src.naturalWidth, 256/src.naturalHeight);

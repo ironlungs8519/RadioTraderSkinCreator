@@ -2,4 +2,6 @@ name=Bloody
 id=RT_Skin_Bloody
 description=Custom Radio Traders radio skin, made with the Radio Traders Skin Maker.
 require=\RadioTraders
+loadModAfter=\RadioTraders
 poster=poster.png
+versionMin=42.20
